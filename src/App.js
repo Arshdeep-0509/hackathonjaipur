@@ -18,21 +18,21 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" Component={Homepage} />
+        <Route path="/" element={<Homepage />} />
 
-        <Route path="/donateblood" Component={Blooddonation} />
-        <Route path="/donatemoney" Component={Charity} />
-        <Route path="/donateclothes" Component={Clothes} />
-        <Route path="/donateorgan" Component={Organ} />
-        <Route path="/hunger" Component={Hunger} />
-        <Route path="/homeless" Component={Homeless} />
-        <Route path="healthcare/" Component={HealthCare} />
-        <Route path="/medicine" Component={Medicine} />
-        <Route path="/job" Component={Jobassistance} />
-        <Route path="/donatefood" Component={Donatefood} />
+        <Route path="/donateblood" element={<Blooddonation />} />
+        <Route path="/donatemoney" element={<Charity />} />
+        <Route path="/donateclothes" element={<Clothes />} />
+        <Route path="/donateorgan" element={<Organ />} />
+        <Route path="/hunger" element={<Hunger />} />
+        <Route path="/homeless" element={<Homeless />} />
+        <Route path="healthcare/" element={<HealthCare />} />
+        <Route path="/medicine" element={<Medicine />} />
+        <Route path="/job" element={<Jobassistance />} />
+        <Route path="/donatefood" element={<Donatefood />} />
 
-        <Route path="/about" Component={About} />
-        <Route path="/medicine" Component={Medicine} />
+        <Route path="/about" element={<About />} />
+        <Route path="/medicine" element={<Medicine />} />
       </Routes>
     </BrowserRouter>
   );
